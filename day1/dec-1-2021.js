@@ -31,7 +31,7 @@ function countIncreases(array) {
             console.log('starting value doesnt count ' + cur);
         }
         return cur;
-    }, 0);
+    });
     return increases;
 }
 
@@ -43,7 +43,7 @@ function countIncreases(array) {
 function getThreeNumSums(inputArray) {
     return [...Array(inputArray.length - 2).keys()]
         .map((index) => {
-            return inputArray.slice(index, index + 2).reduce((prev, cur) => prev + cur, 0)
+            return inputArray.slice(index, index + 3).reduce((prev, cur) => prev + cur, 0)
         });
 }
 
